@@ -1,0 +1,84 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="plugins/jquery.zoom/jquery.zoom.css" />
+    <link rel="stylesheet" href="plugins/jquery.zoom/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <div class="map">
+          <div class="map-control map-control-zoomin"></div>
+          <div class="map-control map-control-zoomout"></div>
+          <div class="maps-container">
+            <div class="maps-container-inner">
+              <div class="maps-zoomed-container">
+                <div id="miDiv"></div>
+                <div class="marker-group" id="group-marker-arica">
+                  <a href="#"></a>
+                  <span>Arica</span>
+                  <hr />
+                </div>
+                <div class="marker-group" id="group-marker-santiago">
+                  <a href="#"></a>
+                  <span>Santiago</span>
+                  <hr />
+                </div>
+                <div class="marker-group" id="group-marker-puntaArenas">
+                  <a href="#"></a>
+                  <span>Punta Arenas</span>
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div2">
+        <h1>Taller - Clase 8</h1>
+        <p>
+          Según los contenidos abordados en clase, desarrollen una página web
+          que utilice el plugin Any Element Zoom & Pancon, debe contener las
+          siguientes características:
+        </p>
+        <p>● La página debe contener un mapa de Chile en formato svg.</p>
+
+        <p>
+          ● En el mapa, se deben ubicar las ciudades de Arica, Santiago y Punta
+          Arenas, adaptando la librería del plugin (nota: la ubicación puede no
+          ser exacta). Las siguientes son imágenes referenciales de lo buscado
+          con el plugin (notar los íconos de “zoom in” y “zoom out”, provistos
+          en la librería, y que aparecen en el rincón superior derecho de las
+          imágenes).
+        </p>
+      </div>
+      <div class="div3">
+        <h1 id="region">Chile</h1>
+        <p id="regionDescription">
+          Chile es un país ubicado en el extremo sur de América del Sur, con una
+          forma de gobierno republicana, democrática, unitaria y
+          presidencialista. Su capital es Santiago. Es geográficamente diverso,
+          con paisajes que van desde el desierto de Atacama hasta la Patagonia.
+          Chile es un importante exportador de recursos naturales, pero también
+          enfrenta desafíos sociales. Culturalmente, tiene una rica historia y
+          tradiciones, como la música y danza folclórica, y festividades
+          populares como la Fiesta de la Vendimia. En resumen, Chile es un país
+          atractivo por su diversidad geográfica y cultural.
+        </p>
+      </div>
+    </div>
+    <script src="./js/svg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./plugins/jquery.zoom/zoom.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
